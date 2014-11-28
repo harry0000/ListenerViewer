@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.github.harry0000.ListenerViewer.controller.ListenerViewerController">
+  <children>
+    <VBox>
+      <Label text="Slider1" />
+      <Slider fx:id="slider1" min="0.0" max="100.0" value="50.0" blockIncrement="1.0d" minorTickCount="10" majorTickUnit="10.0d" snapToTicks="true" showTickLabels="true" showTickMarks="true" />
+      <Label text="Slider2" />
+      <Slider fx:id="slider2" min="0.0" max="100.0" value="50.0" blockIncrement="1.0d" minorTickCount="10" majorTickUnit="10.0d" snapToTicks="true" showTickLabels="true" showTickMarks="true" />
+      <TextArea fx:id="log" editable="false"></TextArea>
+      <HBox alignment="TOP_RIGHT">
+        <Button onAction="#handleClear" text="_Clear"/>
+      </HBox>
+    </VBox>
+  </children>
+</AnchorPane>
